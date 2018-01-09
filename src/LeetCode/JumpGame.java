@@ -14,11 +14,11 @@ public class JumpGame {
         int max = 0;
 
         for(int i = 0; i < nums.length; i++){
-            if(max < i){
+            if(max <i){
                 return false;
             }
 
-            max = Math.max(nums[i]+ i, max);
+            max = Math.max(max, nums[i]+i);
         }
         return true;
     }
